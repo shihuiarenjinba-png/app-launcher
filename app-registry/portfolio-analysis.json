@@ -1,0 +1,33 @@
+﻿{
+    "id":  "portfolio-analysis",
+    "name":  "ポートフォリオ分析",
+    "category":  "Finance",
+    "type":  "streamlit",
+    "entry":  "app/app.py",
+    "cwd":  "app",
+    "port":  8510,
+    "description":  "ポートフォリオの分析、シミュレーション、PDF出力を扱うツールです。",
+    "tags":  [
+                 "finance",
+                 "portfolio"
+             ],
+    "links":  [
+                  {
+                      "label":  "アプリフォルダ",
+                      "path":  "app"
+                  },
+                  {
+                      "label":  "requirements",
+                      "path":  "app/requirements.txt"
+                  }
+              ],
+    "ai":  {
+               "logDiagnosis":  true
+           },
+    "protected":  false,
+    "favorite":  true,
+    "priority":  30,
+    "hidden":  true,
+    "merged_into":  "analysis-hub",
+    "status":  "merged"
+}

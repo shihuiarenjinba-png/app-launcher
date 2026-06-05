@@ -1,0 +1,35 @@
+﻿{
+    "id":  "regime-simulator",
+    "name":  "レジームシミュレーター",
+    "category":  "Finance",
+    "type":  "streamlit",
+    "entry":  "simulator/main.py",
+    "cwd":  "simulator",
+    "port":  8503,
+    "python":  "3.13",
+    "description":  "市場レジームやファクターの状態変化を確認するツールです。",
+    "tags":  [
+                 "finance",
+                 "regime",
+                 "simulation"
+             ],
+    "links":  [
+                  {
+                      "label":  "アプリフォルダ",
+                      "path":  "simulator"
+                  },
+                  {
+                      "label":  "src",
+                      "path":  "simulator/src"
+                  }
+              ],
+    "ai":  {
+               "logDiagnosis":  true
+           },
+    "protected":  false,
+    "favorite":  true,
+    "priority":  20,
+    "hidden":  true,
+    "merged_into":  "analysis-hub",
+    "status":  "experimental"
+}

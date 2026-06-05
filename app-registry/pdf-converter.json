@@ -1,0 +1,19 @@
+{
+  "id": "pdf-converter",
+  "name": "ドキュメント→PDF変換",
+  "category": "Practical Tools",
+  "type": "streamlit",
+  "entry": "pdf-converter/app.py",
+  "cwd": "pdf-converter",
+  "port": 8507,
+  "description": "画像、Word、Excel、PDFのPDF化や結合を扱う実用ツールです。",
+  "tags": ["pdf", "document", "converter"],
+  "links": [
+    {"label": "アプリフォルダ", "path": "pdf-converter"},
+    {"label": "requirements", "path": "pdf-converter/requirements.txt"}
+  ],
+  "ai": {"logDiagnosis": true, "folderTriage": false},
+  "protected": false,
+  "favorite": true,
+  "priority": 10
+}

@@ -1,0 +1,34 @@
+﻿{
+    "id":  "factor-simulator",
+    "name":  "ファクターシミュレーター",
+    "category":  "Finance",
+    "type":  "streamlit",
+    "entry":  "factor-simulator/app.py",
+    "cwd":  "factor-simulator",
+    "port":  8502,
+    "description":  "ファクター投資やマーケットデータのシミュレーションを行うツールです。",
+    "tags":  [
+                 "finance",
+                 "factor",
+                 "simulation"
+             ],
+    "links":  [
+                  {
+                      "label":  "アプリフォルダ",
+                      "path":  "factor-simulator"
+                  },
+                  {
+                      "label":  "requirements",
+                      "path":  "factor-simulator/requirements.txt"
+                  }
+              ],
+    "ai":  {
+               "logDiagnosis":  true
+           },
+    "protected":  false,
+    "favorite":  true,
+    "priority":  10,
+    "hidden":  true,
+    "merged_into":  "analysis-hub",
+    "status":  "experimental"
+}

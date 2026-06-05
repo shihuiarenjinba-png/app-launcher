@@ -1,0 +1,20 @@
+﻿{
+  "id": "analysis-hub",
+  "name": "分析・予測・リスク母艦",
+  "category": "Finance",
+  "type": "streamlit",
+  "entry": "40-finance/analysis-hub/app.py",
+  "cwd": "40-finance/analysis-hub",
+  "port": 8504,
+  "description": "金融分析、将来予測、リスク分析、監査、実験コードをまとめて扱う統合入口です。",
+  "tags": ["finance", "analysis", "forecast", "risk", "hub"],
+  "links": [
+    {"label": "母艦フォルダ", "path": "40-finance/analysis-hub"},
+    {"label": "金融アプリ群", "path": "40-finance"},
+    {"label": "共有データ", "path": ".shared/factor_data"}
+  ],
+  "ai": {"logDiagnosis": true, "folderTriage": true, "scriptSummary": true},
+  "protected": false,
+  "favorite": true,
+  "priority": 5
+}

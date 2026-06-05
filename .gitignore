@@ -1,0 +1,23 @@
+# 既定ですべて無視
+/*
+/.*
+
+# 母艦ランチャー一式だけ追跡
+!/.gitignore
+!/README.md
+!/launcher.py
+!/launcher_core/
+!/app-registry/
+!/config.json
+!/ai/
+!/start_stats_app.bat
+!/LAUNCHER_INTEGRATION_NOTES.md
+!/LAUNCHER_UPGRADE_PLAN.md
+!/UNUSED_FILE_CANDIDATES.md
+
+# 母艦内のキャッシュ/実行時生成物は除外
+launcher_core/__pycache__/
+*.pyc
+.launcher_pids.json
+logs/
+*.log

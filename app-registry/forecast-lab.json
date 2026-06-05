@@ -1,0 +1,20 @@
+{
+    "id": "forecast-lab",
+    "name": "将来予測ラボ",
+    "category": "Forecast",
+    "type": "streamlit",
+    "entry": "40-finance/forecast/app.py",
+    "cwd": "40-finance/forecast",
+    "port": 8512,
+    "description": "リターン系列からモンテカルロ / GARCH で将来予測を行うアプリ。入力は .shared/factor_data またはアップロード。",
+    "tags": ["finance", "forecast", "monte-carlo", "garch", "risk"],
+    "links": [
+        {"label": "アプリフォルダ", "path": "40-finance/forecast"},
+        {"label": "共有データ", "path": ".shared/factor_data"},
+        {"label": "requirements", "path": "40-finance/forecast/requirements.txt"}
+    ],
+    "ai": {"logDiagnosis": true},
+    "protected": false,
+    "favorite": true,
+    "priority": 15
+}

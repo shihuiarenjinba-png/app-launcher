@@ -1,0 +1,19 @@
+{
+  "id": "factor-data-hub",
+  "name": "ファクター/マーケットデータ取得",
+  "category": "Data",
+  "type": "streamlit",
+  "entry": "factor-data-hub/app.py",
+  "cwd": "factor-data-hub",
+  "port": 8508,
+  "description": "ファクター、マーケット、共有データの取得と確認を行うツールです。",
+  "tags": ["data", "factor", "market"],
+  "links": [
+    {"label": "アプリフォルダ", "path": "factor-data-hub"},
+    {"label": "共有データ", "path": ".shared/factor_data"}
+  ],
+  "ai": {"logDiagnosis": true, "folderTriage": true},
+  "protected": false,
+  "favorite": false,
+  "priority": 10
+}

@@ -1,0 +1,34 @@
+﻿{
+    "id":  "bpp-tool",
+    "name":  "BPPツール",
+    "category":  "Finance",
+    "type":  "streamlit",
+    "entry":  "bpp/app.py",
+    "cwd":  "bpp",
+    "port":  8505,
+    "description":  "BPP関連のローカル実験、金融分析、補助ツールをまとめる入口です。",
+    "tags":  [
+                 "finance",
+                 "bpp",
+                 "tools"
+             ],
+    "links":  [
+                  {
+                      "label":  "アプリフォルダ",
+                      "path":  "bpp"
+                  },
+                  {
+                      "label":  "README",
+                      "path":  "bpp/README.md"
+                  }
+              ],
+    "ai":  {
+               "logDiagnosis":  true
+           },
+    "protected":  false,
+    "favorite":  false,
+    "priority":  40,
+    "hidden":  true,
+    "merged_into":  "analysis-hub",
+    "status":  "experimental"
+}

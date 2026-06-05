@@ -1,0 +1,21 @@
+{
+    "id": "saas-replacement-lab",
+    "name": "SaaS replacement lab",
+    "category": "Finance",
+    "type": "streamlit",
+    "entry": "saas-replacement-lab/app.py",
+    "cwd": "saas-replacement-lab",
+    "port": 8511,
+    "description": "小さな実験ツール群。必要に応じて将来、母艦の機能へ統合します。",
+    "tags": ["finance", "lab", "experimental"],
+    "links": [
+        {"label": "アプリフォルダ", "path": "saas-replacement-lab"}
+    ],
+    "ai": {"logDiagnosis": true},
+    "protected": false,
+    "favorite": false,
+    "priority": 60,
+    "hidden": true,
+    "merged_into": "analysis-hub",
+    "status": "on-hold"
+}

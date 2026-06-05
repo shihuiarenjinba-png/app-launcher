@@ -1,0 +1,7 @@
+{
+  "ollama_url": "http://127.0.0.1:11434",
+  "fast_model": "llama3.1:8b",
+  "default_model": "qwen3:14b",
+  "deep_model": "qwen3.6:35b-a3b-q4_K_M",
+  "embedding_model": "nomic-embed-text:latest"
+}
