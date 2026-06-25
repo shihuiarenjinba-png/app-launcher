@@ -10,6 +10,7 @@
 !/launcher.py
 !/launcher_core/
 !/app-registry/
+!/tools/
 !/config.json
 !/ai/
 !/start_stats_app.bat
