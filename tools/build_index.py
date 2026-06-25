@@ -60,8 +60,10 @@ def load_apps() -> list[dict]:
             "favorite":    bool(data.get("favorite", False)),
             "hidden":      bool(data.get("hidden", False)),
             "priority":    data.get("priority", 999),
-            "github":      ext.get("github"),
-            "live":        ext.get("live"),
+            # JSON's own live_url field wins over the hand-curated EXTERNAL map,
+            # so once Phase X1 deploys are in, the registry JSONs alone drive routing.
+            "github":      data.get("github_url") or ext.get("github"),
+            "live":        data.get("live_url") or ext.get("live"),
             "launch_cmd":  f"cd {cwd} && streamlit run {pathlib.PurePosixPath(entry).name} --server.port {port}",
         })
     out.sort(key=lambda r: (not r["favorite"], r["priority"], r["name"]))
@@ -169,8 +171,8 @@ def render(apps: list[dict]) -> str:
       <button class="icon-btn" id="theme" title="テーマ (t)">🌗</button>
     </header>
     <p class="sub">ローカル Streamlit アプリ {len(apps)} 件を <code>app-registry/*.json</code> から自動集約。
-    起動コマンドはコピーしてターミナルに貼り付け、停止は <code>Ctrl+C</code>。
-    分析結果が Web 公開済みのアプリは「Open Live」で直接アクセスできます。</p>
+    クラウド deploy 済みは <b>▶ 起動</b> で直接 UI が立ち上がります(cold start 5-30 秒)。
+    ローカル起動派の方は <b>⎘ 起動コマンド</b> でクリップボードへ。</p>
 
     <div class="controls">
       <input id="q" type="search" placeholder="名前・説明・タグで検索 ( / でフォーカス)" autocomplete="off">
@@ -237,7 +239,7 @@ def render(apps: list[dict]) -> str:
         const tags = (a.tags||[]).slice(0,4).map(t=>`<span class="badge">${{t}}</span>`).join("");
         const mergedInto = a.merged_into ? `<span class="badge">→ ${{a.merged_into}}</span>` : "";
         const actions = [];
-        if (a.live)   actions.push(`<a class="btn primary" href="${{a.live}}" target="_blank" rel="noopener">▶ Open Live</a>`);
+        if (a.live)   actions.push(`<a class="btn primary launch" data-url="${{a.live}}" data-name="${{a.name}}" href="${{a.live}}" target="_blank" rel="noopener">▶ 起動</a>`);
         if (a.github) actions.push(`<a class="btn" href="${{a.github}}" target="_blank" rel="noopener">📦 GitHub</a>`);
         actions.push(`<button class="btn" data-copy="${{encodeURIComponent(a.launch_cmd)}}">⎘ 起動コマンド</button>`);
         card.innerHTML = `
@@ -269,6 +271,12 @@ def render(apps: list[dict]) -> str:
           copy(cmd, "起動コマンドを");
           b.classList.add("ok"); b.textContent = "Copied!";
           setTimeout(()=>{{ b.classList.remove("ok"); b.innerHTML="⎘ 起動コマンド"; }}, 1200);
+        }});
+      }});
+      // Show a "起動中..." toast on launch click so cold-start feels intentional.
+      grid.querySelectorAll(".launch").forEach(a => {{
+        a.addEventListener("click", () => {{
+          showToast("⏳ " + a.dataset.name + " を起動中...");
         }});
       }});
     }}
