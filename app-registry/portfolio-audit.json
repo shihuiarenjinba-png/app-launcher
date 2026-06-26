@@ -1,34 +1,35 @@
-﻿{
-    "id":  "portfolio-audit",
-    "name":  "ポートフォリオ監査",
-    "category":  "Finance",
-    "type":  "streamlit",
-    "entry":  "portfolio-audit/app.py",
-    "cwd":  "portfolio-audit",
-    "port":  8506,
-    "description":  "ポートフォリオの監査、指標確認、レポート作成を補助するツールです。",
-    "tags":  [
-                 "finance",
-                 "portfolio",
-                 "audit"
-             ],
-    "links":  [
-                  {
-                      "label":  "アプリフォルダ",
-                      "path":  "portfolio-audit"
-                  },
-                  {
-                      "label":  "requirements",
-                      "path":  "portfolio-audit/requirements.txt"
-                  }
-              ],
-    "ai":  {
-               "logDiagnosis":  true
-           },
-    "protected":  false,
-    "favorite":  false,
-    "priority":  50,
-    "hidden":  true,
-    "merged_into":  "analysis-hub",
-    "status":  "merged"
+{
+  "id": "portfolio-audit",
+  "name": "ポートフォリオ監査",
+  "category": "Finance",
+  "type": "streamlit",
+  "entry": "portfolio-audit/app.py",
+  "cwd": "portfolio-audit",
+  "port": 8506,
+  "description": "ポートフォリオの監査、指標確認、レポート作成を補助するツールです。",
+  "tags": [
+    "finance",
+    "portfolio",
+    "audit"
+  ],
+  "links": [
+    {
+      "label": "アプリフォルダ",
+      "path": "portfolio-audit"
+    },
+    {
+      "label": "requirements",
+      "path": "portfolio-audit/requirements.txt"
+    }
+  ],
+  "ai": {
+    "logDiagnosis": true
+  },
+  "protected": false,
+  "favorite": false,
+  "priority": 50,
+  "hidden": true,
+  "merged_into": "analysis-hub",
+  "status": "merged",
+  "github_url": "https://github.com/shihuiarenjinba-png/portfolio-audit"
 }

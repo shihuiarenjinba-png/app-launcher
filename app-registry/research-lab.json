@@ -8,14 +8,32 @@
   "port": 8509,
   "python": "C:\\Users\\aaron\\apps\\research-scripts\\.venv\\Scripts\\python.exe",
   "description": "研究スクリプト、分析結果、実験出力を見える形で扱う研究用ダッシュボードです。",
-  "tags": ["research", "scripts", "finance"],
-  "links": [
-    {"label": "研究フォルダ", "path": "10-research-lab"},
-    {"label": "研究スクリプト", "path": "research-scripts"},
-    {"label": "実験出力", "path": "research-lab/work"}
+  "tags": [
+    "research",
+    "scripts",
+    "finance"
   ],
-  "ai": {"logDiagnosis": true, "folderTriage": true, "scriptSummary": true},
+  "links": [
+    {
+      "label": "研究フォルダ",
+      "path": "10-research-lab"
+    },
+    {
+      "label": "研究スクリプト",
+      "path": "research-scripts"
+    },
+    {
+      "label": "実験出力",
+      "path": "research-lab/work"
+    }
+  ],
+  "ai": {
+    "logDiagnosis": true,
+    "folderTriage": true,
+    "scriptSummary": true
+  },
   "protected": true,
   "favorite": true,
-  "priority": 10
+  "priority": 10,
+  "github_url": "https://github.com/shihuiarenjinba-png/research-lab"
 }
