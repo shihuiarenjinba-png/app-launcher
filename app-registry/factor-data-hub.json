@@ -7,13 +7,27 @@
   "cwd": "factor-data-hub",
   "port": 8508,
   "description": "ファクター、マーケット、共有データの取得と確認を行うツールです。",
-  "tags": ["data", "factor", "market"],
-  "links": [
-    {"label": "アプリフォルダ", "path": "factor-data-hub"},
-    {"label": "共有データ", "path": ".shared/factor_data"}
+  "tags": [
+    "data",
+    "factor",
+    "market"
   ],
-  "ai": {"logDiagnosis": true, "folderTriage": true},
+  "links": [
+    {
+      "label": "アプリフォルダ",
+      "path": "factor-data-hub"
+    },
+    {
+      "label": "共有データ",
+      "path": ".shared/factor_data"
+    }
+  ],
+  "ai": {
+    "logDiagnosis": true,
+    "folderTriage": true
+  },
   "protected": false,
   "favorite": false,
-  "priority": 10
+  "priority": 10,
+  "github_url": "https://github.com/shihuiarenjinba-png/factor-data-hub"
 }
